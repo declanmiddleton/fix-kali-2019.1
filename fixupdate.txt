@@ -56,3 +56,6 @@ $ sudo apt-get autoclean
 
 IF THE APPLICATIONS MENU DISAPEERS.
 apt-get install gnome-core kali-defaults kali-root-login desktop-base
+
+sudo apt-get install alacarte
+
