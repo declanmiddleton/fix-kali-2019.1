@@ -14,9 +14,23 @@ deb-src http://http.kali.org/kali kali-rolling main contrib non-free
 run in terminal
 apt update && apt -y full-upgrade
 
+https://superuser.com/questions/1600863/whats-going-on-in-my-kali-linux-e-error-pkgproblemresolverresolve-generated
+
+
+Simply clear the dpkg/status as follows...
+
+$ leafpad /var/lib/dpkg/status
+
+Select all [Ctrl+A], and delete (Del)
+Make sure the status is cleared by typing...
+
+$ cat /var/lib/dpkg/status
+
+Update apt and install failed packages...
+$ apt update apt install -f
+
 
 Fixing Unmet Dependencies Error (broken packages)
-
 $ sudo apt-get install -f
 $ sudo dpkg-configure -a
 $ sudo apt-get install -f
