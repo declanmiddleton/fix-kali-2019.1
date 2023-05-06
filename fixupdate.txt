@@ -51,3 +51,8 @@ sudo apt-get -o Debug::pkgProblemResolver=yes dist-upgrade
 clearing the package database
 $ sudo apt-get clean 
 $ sudo apt-get autoclean
+
+
+
+IF THE APPLICATIONS MENU DISAPEERS.
+apt-get install gnome-core kali-defaults kali-root-login desktop-base
