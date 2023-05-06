@@ -3,6 +3,9 @@ update 2019 package
 
 fix broken packages in kali install 2019.1
 
+first things first:
+step 1.
+wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 
 copy to (/etc/apt/sources.list)
 deb http://http.kali.org/kali kali-rolling main contrib non-free
